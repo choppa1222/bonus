@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Бонус новичка GTA 5 RP — промокод SKYE</title>
-<meta name="description" content="Стартуй в GTA 5 RP не с нуля: введи промокод SKYE и забери бонус новичка. Пошаговая инструкция.">
-<meta name="theme-color" content="#0b0b12">
+<title>GTA 5 RP для новичков — гайд и промокод SKYE</title>
+<meta name="description" content="Неофициальный гайд по GTA 5 RP: что установить, что делать в первые 30 минут на сервере и как ввести промокод SKYE (VIP на 10 дней и 50.000$).">
+<meta name="theme-color" content="#1b1b1d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Inter:wght@400;500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -25,234 +25,459 @@ ym(114489946, 'init', {ssr:true, webvisor:true, clickmap:true, referrer: documen
 
 <style>
 :root{
-  --bg:#0b0b12; --bg2:#12121c; --card:#171724; --line:#2a2a3d;
-  --text:#f4f4f8; --muted:#a3a3b8;
-  --hot:#ff2e63; --gold:#ffcc33; --cyan:#22e4ff; --green:#3dff9a;
+  --bg:#1b1b1d; --bg2:#161618; --cell:#202022; --line:#323235;
+  --text:#ecedf0; --muted:#909093; --dim:#5f5f63;
+  --acc:#ff7a2f; --acc2:#ff9a5c; --money:#4fd16b;
+  --display:Unbounded,"Arial Black",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 html,body{overflow-x:hidden;overflow-x:clip;max-width:100%}
-body{background:var(--bg);color:var(--text);font:16px/1.55 Inter,system-ui,-apple-system,sans-serif;overflow-x:hidden;padding-bottom:92px}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,sans-serif;padding-bottom:84px;
+  background-image:linear-gradient(var(--bg2) 1px,transparent 1px);background-size:100% 4px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.ic{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+kbd{display:inline-block;min-width:26px;padding:0 7px;border:1px solid #57575c;border-bottom-width:3px;border-radius:5px;
+  background:#2a2a2d;color:#fff;font:600 13px/1.7 Inter,sans-serif;text-align:center;margin:0 1px;vertical-align:1px}
+.o{color:transparent;-webkit-text-stroke:1.4px var(--text)}
+.acc{color:var(--acc)}
+.money{color:var(--money)}
 
-/* top bar */
-.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:13px;color:var(--muted)}
-.logo{font:800 18px Unbounded,sans-serif;color:var(--text);letter-spacing:.5px}
-.logo b{color:var(--hot)}
-.age{border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+/* header */
+.nav{position:sticky;top:0;z-index:30;background:rgba(27,27,29,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font:900 16px var(--display);letter-spacing:.5px}
+.brand i{display:grid;place-items:center;width:30px;height:30px;background:var(--acc);color:#1b1b1d;font:900 15px var(--display);font-style:normal}
+.brand small{font:500 11px Inter,sans-serif;color:var(--muted);letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line);padding:2px 7px}
+.navlinks{display:flex;gap:26px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+.navlinks a:hover{color:var(--text)}
+.navcta{background:var(--acc);color:#fff;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;padding:10px 16px}
+@media (max-width:900px){.navlinks{display:none}.brand small{display:none}}
 
 /* hero */
-.hero{position:relative;padding:40px 0 56px;isolation:isolate}
-.hero:before{content:"";position:absolute;inset:-120px -40vw auto;height:640px;z-index:-1;
-  background:radial-gradient(600px 300px at 20% 30%,rgba(255,46,99,.35),transparent 70%),
-             radial-gradient(500px 280px at 85% 20%,rgba(34,228,255,.22),transparent 70%),
-             radial-gradient(500px 300px at 60% 90%,rgba(255,204,51,.14),transparent 70%)}
-.grid-bg{position:absolute;inset:0;z-index:-1;opacity:.18;
-  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
-  background-size:44px 44px;mask-image:linear-gradient(#000,transparent 85%)}
-.pill{display:inline-flex;gap:8px;align-items:center;background:rgba(61,255,154,.1);border:1px solid rgba(61,255,154,.35);
-  color:var(--green);font-weight:700;font-size:13px;border-radius:99px;padding:6px 14px}
-.pill i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);animation:blink 1.4s infinite}
-@keyframes blink{50%{opacity:.25}}
-h1{font:800 clamp(34px,7vw,68px)/1.05 Unbounded,sans-serif;margin:18px 0 18px;letter-spacing:-.5px}
-h1 .money{background:linear-gradient(90deg,var(--gold),#ff9f1c);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
-h1 .strike{position:relative;color:var(--muted)}
-h1 .strike:after{content:"";position:absolute;left:-4px;right:-4px;top:52%;height:6px;background:var(--hot);transform:rotate(-4deg);border-radius:3px}
-.lead{font-size:clamp(17px,2.2vw,20px);color:#d6d6e2;max-width:640px}
-.lead b{color:var(--text)}
+.hero{position:relative;padding:56px 0 0;overflow:hidden}
+.hero .bgword{position:absolute;right:-40px;top:20px;font:900 clamp(120px,22vw,320px)/1 var(--display);color:transparent;-webkit-text-stroke:1px #2c2c30;z-index:0;pointer-events:none;letter-spacing:-4px}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.eyebrow b{width:8px;height:8px;background:var(--acc)}
+.hero h1{font:900 clamp(38px,7.2vw,104px)/.98 var(--display);text-transform:uppercase;letter-spacing:-1px;margin:22px 0 26px}
+.hero h1 span{display:block}
+.hero .lead{max-width:560px;font-size:18px;color:#c4c5ca}
+.hero .lead b{color:var(--text)}
 
-/* promo */
-.promo{margin:28px 0 22px;display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
-.code{flex:1 1 260px;display:flex;align-items:center;justify-content:space-between;gap:12px;
-  background:var(--card);border:2px dashed var(--gold);border-radius:16px;padding:14px 16px 14px 20px}
-.code small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.5px}
-.code strong{font:800 34px Unbounded,sans-serif;color:var(--gold);letter-spacing:4px}
-.copy{background:var(--gold);color:#111;border:0;border-radius:10px;font:700 15px Inter,sans-serif;padding:12px 16px;cursor:pointer;white-space:nowrap}
-.copy.done{background:var(--green)}
-.cta{flex:1 1 260px;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;
-  background:linear-gradient(135deg,var(--hot),#ff6a3d);color:#fff;border-radius:16px;padding:20px 24px;
-  font:800 20px Unbounded,sans-serif;box-shadow:0 10px 40px -10px rgba(255,46,99,.7);transition:transform .15s}
-.cta:hover{transform:translateY(-2px)}
-.cta:active{transform:scale(.98)}
-.cta svg{width:22px;height:22px}
-.trust{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted);font-size:14px}
-.trust span:before{content:"✓ ";color:var(--green);font-weight:700}
+.grid{display:grid;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.grid>*{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.herogrid{grid-template-columns:1.2fr 1fr 1fr;margin-top:44px}
+.cellpad{padding:26px}
+.lbl{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.big{font:900 clamp(26px,3vw,40px)/1.05 var(--display);margin-top:10px}
+.tile{position:relative;background:var(--acc);color:#fff;padding:26px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px;cursor:pointer;border:0;text-align:left;font:inherit;transition:background .15s}
+.tile:hover{background:#ff6a14}
+.tile .t{font:700 18px/1.2 var(--display);text-transform:uppercase;padding-right:54px}
+.tile .arr{position:absolute;right:22px;bottom:20px;width:42px;height:42px;stroke:#fff;stroke-width:2.4;fill:none}
+.tile .codev{font:900 clamp(44px,5vw,64px)/1 var(--display);letter-spacing:4px}
+.tile small{font-size:13px;opacity:.9}
+@media (max-width:900px){.herogrid{grid-template-columns:1fr 1fr}.herogrid .span{grid-column:1/-1}}
+@media (max-width:560px){.herogrid{grid-template-columns:1fr}.tile{min-height:170px}}
+
+.btnrow{display:flex;flex-wrap:wrap;gap:0;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--acc);color:#fff;padding:20px 28px;font:700 15px var(--display);text-transform:uppercase;letter-spacing:.5px;cursor:pointer;border:0}
+.btn svg{width:22px;height:22px;stroke:#fff;stroke-width:2.4;fill:none}
+.btn:hover{background:#ff6a14}
+.btn.sec{background:transparent;border:1px solid var(--line);color:var(--text)}
+.btn.sec:hover{border-color:var(--text);background:transparent}
 
 /* sections */
-section{padding:56px 0}
-h2{font:800 clamp(26px,4.5vw,40px)/1.15 Unbounded,sans-serif;margin-bottom:28px}
-h2 em{font-style:normal;color:var(--hot)}
+section{padding:96px 0 0}
+.sh{font:900 clamp(32px,6vw,84px)/1 var(--display);text-transform:uppercase;letter-spacing:-1px;margin-bottom:18px}
+.sp{color:var(--muted);max-width:640px;font-size:17px;margin-bottom:40px}
+.sp b{color:var(--text)}
 
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;counter-reset:s}
-.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;position:relative}
-.step:before{counter-increment:s;content:counter(s);font:800 44px Unbounded,sans-serif;color:transparent;-webkit-text-stroke:1.5px var(--cyan);display:block;margin-bottom:8px}
-.step h3{font-size:19px;margin-bottom:6px}
-.step p{color:var(--muted)}
-.step code{color:var(--gold);font-weight:700}
+.feat{grid-template-columns:repeat(4,1fr)}
+.feat>div{padding:28px 24px 30px;background:var(--cell)}
+.feat .ic{color:var(--acc);width:34px;height:34px;margin-bottom:26px}
+.feat h3{font:700 16px/1.25 var(--display);text-transform:uppercase;margin-bottom:10px}
+.feat p{color:var(--muted);font-size:15px}
+@media (max-width:900px){.feat{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.feat{grid-template-columns:1fr}}
 
-.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
-.role{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:16px;padding:20px 16px}
-.role .ico{font-size:30px;margin-bottom:8px}
-.role b{display:block;font-size:17px}
-.role span{color:var(--muted);font-size:14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media (max-width:900px){.split{grid-template-columns:1fr;gap:24px}}
 
-.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.col{border-radius:18px;padding:22px;border:1px solid var(--line)}
-.col.bad{background:var(--bg2)}
-.col.good{background:linear-gradient(160deg,rgba(255,204,51,.12),rgba(255,46,99,.08));border-color:rgba(255,204,51,.5)}
-.col h3{font:800 16px Unbounded,sans-serif;margin-bottom:12px}
-.col li{list-style:none;padding:6px 0;color:#d6d6e2}
-.col.bad li:before{content:"✕ ";color:var(--muted)}
-.col.good li:before{content:"✓ ";color:var(--green);font-weight:700}
+/* steps (like numbered grid) */
+.steps{grid-template-columns:repeat(6,1fr)}
+.st{grid-column:span 2;padding:28px;min-height:230px;display:flex;flex-direction:column;background:var(--cell)}
+.st.w3{grid-column:span 3}
+.num{font:900 34px/1 var(--display);margin-bottom:22px}
+.st h3{font:600 18px/1.35 Inter,sans-serif;margin-bottom:8px}
+.st p{color:var(--muted);font-size:15px}
+.note{margin-top:auto;padding-top:16px;font-size:13px;color:var(--acc2);display:flex;gap:8px}
+.note .ic{width:18px;height:18px;margin-top:2px}
+.st.tile{min-height:230px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}.st,.st.w3{grid-column:span 1}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
 
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:10px}
-summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary:after{content:"+";color:var(--hot);font-size:22px;line-height:1}
-details[open] summary:after{content:"–"}
-details p{color:var(--muted);margin-top:10px}
+/* mission log */
+.log{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:90px 1fr 170px;gap:24px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start}
+.row .n{font:900 28px/1 var(--display);color:var(--dim)}
+.row h3{font:700 17px/1.3 var(--display);text-transform:uppercase;margin-bottom:8px}
+.row p,.row li{color:#b9bac0;font-size:15px}
+.row ul{margin:6px 0 0 18px}
+.row .pay{text-align:right;font:700 20px var(--display)}
+.row .pay small{display:block;font:500 12px Inter,sans-serif;color:var(--muted);margin-top:4px}
+.row .neg{color:var(--muted)}
+.row:hover .n{color:var(--acc)}
+.warnline{margin-top:10px;font-size:14px;color:#ffb38a;border-left:2px solid var(--acc);padding-left:10px}
+@media (max-width:700px){.row{grid-template-columns:52px 1fr;gap:14px}.row .pay{grid-column:2;text-align:left}}
+.done{margin-top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--cell);border:1px solid var(--line);border-top:0;padding:26px}
+.done b{font:900 clamp(20px,3vw,30px) var(--display);text-transform:uppercase}
+.done span{color:var(--muted)}
 
-.final{text-align:center;background:radial-gradient(500px 200px at 50% 0%,rgba(255,46,99,.25),transparent 70%);border-radius:28px}
-.final .cta{max-width:420px;margin:24px auto 0}
+/* promo */
+.menu{background:#111113;border:1px solid var(--line);font-size:14px}
+.menu .bar{display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.menu .body{display:grid;grid-template-columns:170px 1fr;min-height:300px}
+.menu ul{list-style:none;border-right:1px solid var(--line);padding:8px 0}
+.menu li{padding:9px 16px;color:var(--muted);display:flex;gap:10px;align-items:center}
+.menu li .ic{width:16px;height:16px}
+.menu li.on{color:#fff;background:rgba(255,122,47,.12);box-shadow:inset 3px 0 0 var(--acc)}
+.menu .pane{padding:22px}
+.menu .pane h4{font:700 15px var(--display);text-transform:uppercase;margin-bottom:16px}
+.menu label{display:block;color:var(--muted);font-size:12px;margin-bottom:8px}
+.menu .field{border:1px solid var(--acc);padding:12px 14px;font:700 20px var(--display);letter-spacing:4px}
+.menu .field:after{content:"";display:inline-block;width:2px;height:20px;background:var(--acc);margin-left:4px;vertical-align:-3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.menu .ok{margin-top:14px;display:inline-block;background:var(--acc);color:#fff;font-weight:700;padding:10px 20px;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.menu .ref2{margin-top:18px;color:var(--dim);font-size:12px;border-top:1px dashed var(--line);padding-top:12px}
+@media (max-width:520px){.menu .body{grid-template-columns:118px 1fr}.menu li{padding:8px 10px;font-size:12.5px}.menu .pane{padding:14px}}
+.ol{list-style:none;counter-reset:o;border-top:1px solid var(--line)}
+.ol li{counter-increment:o;display:grid;grid-template-columns:54px 1fr;padding:18px 0;border-bottom:1px solid var(--line);font-size:17px}
+.ol li:before{content:counter(o) ".";font:900 22px var(--display);color:var(--acc)}
+.small{color:var(--muted);font-size:14px;margin-top:18px}
 
-footer{border-top:1px solid var(--line);padding:24px 0 8px;color:#6f6f86;font-size:13px}
+/* rewards */
+.rew{grid-template-columns:repeat(5,1fr)}
+.rew>div{padding:26px 22px;background:var(--cell)}
+.rew .v{font:900 clamp(22px,2.4vw,32px)/1.1 var(--display);margin-top:12px}
+.rew .tot{background:var(--acc);color:#fff}
+.rew .tot .lbl{color:rgba(255,255,255,.8)}
+@media (max-width:900px){.rew{grid-template-columns:1fr 1fr}.rew .tot{grid-column:1/-1}}
+.xp{grid-template-columns:1fr 1fr;margin-top:0}
+.xp>div{padding:26px;display:flex;gap:18px;background:var(--bg)}
+.xp .ic{color:var(--acc)}
+.xp h3{font:700 15px var(--display);text-transform:uppercase;margin-bottom:6px}
+.xp p{color:var(--muted);font-size:15px}
+@media (max-width:700px){.xp{grid-template-columns:1fr}}
 
-/* sticky mobile bar */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
-  background:rgba(11,11,18,.88);backdrop-filter:blur(12px);border-top:1px solid var(--line);
-  display:flex;gap:10px;align-items:center;transform:translateY(110%);transition:transform .25s}
+/* servers */
+.srv{grid-template-columns:repeat(4,1fr)}
+.srv>div{padding:24px 22px;display:flex;align-items:center;gap:12px;font:700 16px var(--display);text-transform:uppercase;background:linear-gradient(135deg,#232326,#1c1c1e)}
+.srv span{font-size:22px}
+@media (max-width:760px){.srv{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (max-width:520px){
+  .srv>div{padding:18px 12px;font-size:12.5px;gap:8px}.srv span{font-size:18px}
+  .rew{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.rew>div{padding:20px 14px}.rew .v{font-size:19px}
+}
+
+/* faq */
+.faq{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:24px 0;font:700 clamp(15px,1.8vw,19px)/1.3 var(--display);text-transform:uppercase}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";width:16px;height:16px;flex:none;margin-top:3px;border-right:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(45deg);transition:transform .2s}
+details[open] summary:after{transform:rotate(225deg)}
+details p{color:var(--muted);padding:0 0 24px;max-width:780px}
+
+/* final */
+.final{margin-top:96px;background:var(--acc);color:#fff;position:relative;overflow:hidden}
+.final .wrap{padding-top:70px;padding-bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.final h2{font:900 clamp(34px,6.5vw,92px)/.95 var(--display);text-transform:uppercase;letter-spacing:-1px}
+.final h2 .o{-webkit-text-stroke-color:#fff}
+.final .btn{background:#1b1b1d}
+.final .btn:hover{background:#000}
+
+footer{padding:28px 0;color:var(--dim);font-size:13px;border-top:1px solid var(--line)}
+footer p{max-width:900px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;background:var(--bg);border-top:1px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom);transform:translateY(110%);transition:transform .25s}
 .sticky.show{transform:none}
-.sticky .c{font:800 15px Unbounded,sans-serif;color:var(--gold);border:1.5px dashed var(--gold);border-radius:10px;padding:10px 12px;background:none;cursor:pointer}
-.sticky .cta{flex:1;padding:14px;font-size:16px;border-radius:12px}
-@media (min-width:860px){.sticky{display:none}body{padding-bottom:0}}
-@media (max-width:560px){.compare{grid-template-columns:1fr}.code strong{font-size:28px}}
+.sticky button{background:transparent;border:0;border-right:1px solid var(--line);color:var(--text);padding:0 18px;font:900 18px var(--display);letter-spacing:3px;cursor:pointer}
+.sticky a{flex:1;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px;font:700 15px var(--display);text-transform:uppercase}
+.sticky a svg{width:18px;height:18px;stroke:#fff;stroke-width:2.4;fill:none}
+@media (min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+.toast{position:fixed;left:50%;top:74px;transform:translate(-50%,-30px);opacity:0;z-index:50;background:#111113;border:1px solid var(--acc);
+  padding:10px 18px;font-size:14px;font-weight:600;transition:.2s;pointer-events:none}
+.toast.show{transform:translate(-50%,0);opacity:1}
 </style>
 </head>
 <body>
 
-<div class="wrap">
-  <div class="top">
-    <div class="logo">SKYE<b>.</b>bonus</div>
-    <div>Партнёрская страница · <span class="age">16+</span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arr" viewBox="0 0 24 24"><path d="M6 6l12 12M18 8v10H8"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7"/></symbol>
+  <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5h6v2M3 12.5h18M11 12.5v2h2v-2"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M12 8.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5M10 20v-6h4v6"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4.5a3 3 0 0 0 3.5 4M16 6h3.5a3 3 0 0 1-3.5 4M12 13v4M8.5 20h7M10 17h4"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2zM4 20a2 2 0 0 0 2 1h13v-3"/><path d="M8 7h7M8 10.5h5"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v4.5M12 17.5v.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-home2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 10v10"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.5M4 12h.5M4 18h.5"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8c-2-4-6-4-6-1.5S10 8 12 8c2 0 6 1 6-1.5S14 4 12 8"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.5 11h11L21 7H7"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+</svg>
+
+<div class="toast" id="toast">Код SKYE скопирован</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><i>R</i>RP START <small>неофициальный гайд · 16+</small></a>
+    <div class="navlinks"><a href="#how">Как зайти</a><a href="#first">Первые 30 минут</a><a href="#code">Промокод</a><a href="#faq">Вопросы</a></div>
+    <a class="navcta" href="https://gta5rp.com/ref/skye" data-play="nav">Играть</a>
   </div>
+</nav>
 
-  <header class="hero">
-    <div class="grid-bg"></div>
-    <span class="pill"><i></i>Промокод активен</span>
-    <h1>Стартуй в GTA&nbsp;5&nbsp;RP<br>не <span class="strike">с нуля</span>, а с <span class="money">100.000$</span></h1>
-    <p class="lead">Пока другие неделю копят на первую тачку, ты заходишь на сервер с бонусом. <b>Введи промокод SKYE</b> и забери стартовые награды новичка.</p>
+<header class="hero" id="top">
+  <div class="bgword">SKYE</div>
+  <div class="wrap">
+    <div class="eyebrow"><b></b>Гайд для тех, кто ни разу не играл в RP</div>
+    <h1><span>Зайди в</span><span class="o">GTA 5 RP</span><span class="acc">с бонусом</span></h1>
+    <p class="lead">Объясняем по шагам: что такое RP, что установить, что делать в первые 30 минут на сервере и как ввести промокод <b>SKYE</b>, чтобы получить <b>VIP на 10 дней</b> и <b>50.000$</b>.</p>
+    <div class="btnrow">
+      <a class="btn" href="https://gta5rp.com/ref/skye" data-play="hero">Начать играть <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+      <a class="btn sec" href="#how">Читать гайд</a>
+    </div>
 
-    <div class="promo">
-      <div class="code">
-        <div><small>Твой промокод</small><strong id="code">SKYE</strong></div>
-        <button class="copy" type="button" data-copy>Скопировать</button>
+    <div class="grid herogrid">
+      <button class="tile span" type="button" data-copy>
+        <span class="t">Промокод<br><small>нажми, чтобы скопировать</small></span>
+        <span class="codev">SKYE</span>
+        <svg class="arr" viewBox="0 0 24 24"><use href="#i-arr"/></svg>
+      </button>
+      <div class="cellpad"><div class="lbl">Сразу после ввода</div><div class="big">VIP<br>на 10 дней</div><p class="small">×2 опыта за каждый час игры</p></div>
+      <div class="cellpad"><div class="lbl">К 5 уровню</div><div class="big money">+50.000$</div><p class="small">частями на 3, 4 и 5 уровне</p></div>
+    </div>
+  </div>
+</header>
+
+<!-- WHAT IS RP -->
+<section id="what">
+  <div class="wrap">
+    <div class="split">
+      <h2 class="sh">Что такое<br><span class="o">RolePlay</span></h2>
+      <p class="sp" style="margin-top:10px">GTA 5 RP — это отдельные онлайн-сервера для GTA V, где сотни живых людей <b>отыгрывают роли</b>. Здесь не стреляют во всех подряд, как в обычной GTA. Ты живёшь жизнью своего персонажа: работаешь, копишь на машину и дом, вступаешь во фракции и общаешься с людьми голосом.</p>
+    </div>
+    <div class="grid feat">
+      <div><svg class="ic"><use href="#i-mic"/></svg><h3>Живые игроки</h3><p>Вокруг реальные люди с голосовым чатом и своими историями, а не боты.</p></div>
+      <div><svg class="ic"><use href="#i-case"/></svg><h3>Работа и карьера</h3><p>Стройка, порт, такси, механик, дальнобойщик, пожарный. Работы открываются с уровнем.</p></div>
+      <div><svg class="ic"><use href="#i-badge"/></svg><h3>Фракции</h3><p>Полиция, медики, правительство или банды и мафии. Сторону выбираешь сам.</p></div>
+      <div><svg class="ic"><use href="#i-home"/></svg><h3>Своё имущество</h3><p>Машины, дома, квартиры и бизнесы. Всё, что заработал, остаётся твоим.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY GTA5RP -->
+<section id="why">
+  <div class="wrap">
+    <h2 class="sh">Почему <span class="o">GTA5RP</span></h2>
+    <p class="sp">RP-проектов для GTA V много. Новичку проще всего начинать здесь, и вот почему:</p>
+    <div class="grid feat">
+      <div><svg class="ic"><use href="#i-trophy"/></svg><h3>Старый и большой</h3><p>Один из самых известных RP-проектов для GTA V. Огромное комьюнити: ты точно не будешь один.</p></div>
+      <div><svg class="ic"><use href="#i-map"/></svg><h3>8 серверов</h3><p>В лаунчере есть отдельный блок «Рекомендуем для новичков»: не ошибёшься с выбором.</p></div>
+      <div><svg class="ic"><use href="#i-flag"/></svg><h3>Стартовый квест</h3><p>Квест «Начало пути» проведёт за руку через первые деньги, права и паспорт.</p></div>
+      <div><svg class="ic"><use href="#i-book"/></svg><h3>Своя вики</h3><p>У проекта есть официальная вики с разбором каждой работы и механики.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO JOIN -->
+<section id="how">
+  <div class="wrap">
+    <h2 class="sh">Как <span class="o">зайти?</span></h2>
+    <p class="sp">Пять шагов до первого входа. Дольше всего придётся ждать, пока скачается сама игра.</p>
+    <div class="grid steps">
+      <div class="st"><div class="num">1.</div><h3>Купи лицензионную GTA V (версия Legacy)</h3><p>Steam, Epic Games Store, Rockstar Games или ключ PlayKeys. Пиратка не запустится.</p>
+        <div class="note"><svg class="ic"><use href="#i-clock"/></svg>Ставь игру на SSD: с HDD она грузится заметно дольше.</div></div>
+      <div class="st"><div class="num">2.</div><h3>Запусти GTA V один раз</h3><p>Из Steam или Epic при первом запуске поставится Rockstar Games Launcher. Пройди установку и войди в аккаунт Rockstar.</p></div>
+      <a class="st tile" href="https://gta5rp.com/ref/skye" data-play="steps"><span class="num" style="margin:0">3.</span><span class="t">Скачай лаунчер GTA5RP на официальном сайте</span><svg class="arr" viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+      <div class="st w3"><div class="num">4.</div><h3>Создай аккаунт GTA5RP</h3><p>В лаунчере нажми «Войти» в левом нижнем углу, затем «Зарегистрироваться». Это отдельный аккаунт, с Rockstar он никак не связан.</p>
+        <div class="note"><svg class="ic"><use href="#i-warn"/></svg>Ставь игру и лаунчеры в разные папки, иначе при запуске будут ошибки.</div></div>
+      <div class="st w3"><div class="num">5.</div><h3>Выбери сервер и нажми «Играть»</h3><p>Если не знаешь, какой выбрать, бери любой из блока «Рекомендуем для новичков». Лаунчер один раз скачает файлы, сам запустит игру и подключит тебя к серверу.</p>
+        <div class="note"><svg class="ic"><use href="#i-badge"/></svg>Сразу защити аккаунт: подтверди почту и включи 2FA в личном кабинете.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST 30 MIN -->
+<section id="first">
+  <div class="wrap">
+    <h2 class="sh">Первые <span class="o">30 минут</span></h2>
+    <p class="sp">Ты появишься на сервере с <b class="money">3.000$</b> в кармане. Дальше просто иди по стартовому квесту «Начало пути». Вот он целиком:</p>
+    <div class="log">
+      <div class="row"><div class="n">01</div><div><h3>Создай персонажа</h3>
+        <ul><li>Выбери пустой слот с плюсом и прочитай «Ограничения по именам».</li><li>Укажи национальность, нормальные имя и фамилию (как у реального человека) и возраст от 18 до 70.</li><li>Настрой внешность и нажми «Начать играть». Внешность потом можно поменять.</li></ul></div>
+        <div class="pay money">3.000$<small>стартовые наличные</small></div></div>
+      <div class="row"><div class="n">02</div><div><h3>Подойди к Майклу</h3>
+        <p>Он стоит прямо на старте: подойди и нажми <kbd>E</kbd>. Затем открой телефон <kbd>↑</kbd> → «Сообщения» и нажми «Геолокация». На карте появится метка.</p></div><div class="pay"></div></div>
+      <div class="row"><div class="n">03</div><div><h3>Возьми скутер</h3>
+        <p>Рядом с Майклом стоит NPC «Местный арендодатель»: нажми <kbd>E</kbd>. Двигатель заводится клавишей <kbd>2</kbd>. Едь по метке.</p></div>
+        <div class="pay neg">−100$<small>аренда</small></div></div>
+      <div class="row"><div class="n">04</div><div><h3>Первая работа: стройка или порт</h3>
+        <p>Подойди к «Прорабу» и начни смену. Нужно сделать 50 действий:</p>
+        <ul><li><b>Стройка:</b> ходишь по меткам и быстро жмёшь клавишу, которую показывает игра.</li><li><b>Порт:</b> носишь ящики и жмёшь клавишу, когда полоска попадает в зелёную зону.</li></ul>
+        <p class="warnline">Когда закончишь, вернись к прорабу и заверши смену, иначе не получишь зарплату.</p></div>
+        <div class="pay money">+1.000$<small>за квест + зарплата</small></div></div>
+      <div class="row"><div class="n">05</div><div><h3>Задание Джорджа</h3>
+        <p>Купи ему пиццу и сигареты в магазине 24/7: телефон <kbd>↑</kbd> → GPS → «Магазины 24/7» → «Ближайший». Отнеси покупки и надень полученную одежду через инвентарь <kbd>I</kbd>.</p></div>
+        <div class="pay money">+200$<small>и комплект одежды</small></div></div>
+      <div class="row"><div class="n">06</div><div><h3>Автошкола: права категории B</h3>
+        <p>Прочитай «Теорию» и пройди тест из 10 вопросов. Затем практика на парковке: 4 минуты 30 секунд на маршрут.</p>
+        <p class="warnline">В тесте можно ошибиться только один раз. Если провалишь, попытку придётся оплатить заново.</p></div>
+        <div class="pay neg">−200$<small>теория + практика</small></div></div>
+      <div class="row"><div class="n">07</div><div><h3>Фото на паспорт → снова Майкл</h3>
+        <p>Метку поставишь через <kbd>F10</kbd> → «Задания» → «Точка на карте». Сфотографируйся на документы и вернись к Майклу.</p></div><div class="pay"></div></div>
+    </div>
+    <div class="done"><b>Начало пути пройдено</b><span>Теперь у тебя есть деньги, права, паспорт и своя одежда</span></div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section id="code">
+  <div class="wrap">
+    <h2 class="sh">Как ввести <span class="acc">SKYE</span></h2>
+    <div class="split">
+      <div>
+        <ol class="ol">
+          <li><span>Зайди на сервер своим персонажем.</span></li>
+          <li><span>Нажми <kbd>F10</kbd>, откроется главное меню.</span></li>
+          <li><span>Открой раздел «Приглашение» (иногда он лежит внутри «Настроек»).</span></li>
+          <li><span>В поле «Реферальный код» впиши <b class="acc">SKYE</b> и подтверди.</span></li>
+        </ol>
+        <p class="small">Код работает на любом сервере проекта. Не перепутай: купоны вводятся в отдельное поле, а тебе нужно именно «Реферальный код».</p>
+        <div class="btnrow" style="margin-top:22px"><button class="btn" type="button" data-copy>Скопировать SKYE</button></div>
       </div>
-      <a class="cta" href="https://gta5rp.com/ref/skye" data-play="hero">
-        Начать играть
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
+      <div class="menu" aria-hidden="true">
+        <div class="bar"><span>F10 · Главное меню</span><span>Esc</span></div>
+        <div class="body">
+          <ul>
+            <li><svg class="ic"><use href="#i-home2"/></svg>Главная</li>
+            <li><svg class="ic"><use href="#i-user"/></svg>Персонаж</li>
+            <li><svg class="ic"><use href="#i-list"/></svg>Задания</li>
+            <li><svg class="ic"><use href="#i-gift"/></svg>Хранилище</li>
+            <li><svg class="ic"><use href="#i-cart"/></svg>Магазин</li>
+            <li class="on"><svg class="ic"><use href="#i-users"/></svg>Приглашение</li>
+            <li><svg class="ic"><use href="#i-gear"/></svg>Настройки</li>
+          </ul>
+          <div class="pane">
+            <h4>Приглашение</h4>
+            <label>Реферальный код</label>
+            <div class="field">SKYE</div>
+            <div class="ok">Подтвердить</div>
+            <div class="ref2">Это упрощённая схема: в игре меню выглядит немного иначе.</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="trust"><span>Регистрация на официальном сайте проекта</span><span>Проект бесплатный</span><span>Бонус по коду SKYE</span></div>
-  </header>
+  </div>
+</section>
+
+<!-- REWARDS -->
+<section id="rewards">
+  <div class="wrap">
+    <h2 class="sh">Что даёт <span class="o">код</span></h2>
+    <p class="sp">Деньги приходят не сразу, а по мере роста уровня персонажа.</p>
+    <div class="grid rew">
+      <div><div class="lbl">Сразу</div><div class="v acc">VIP<br>10 дней</div></div>
+      <div><div class="lbl">3 уровень</div><div class="v money">+7.000$</div></div>
+      <div><div class="lbl">4 уровень</div><div class="v money">+18.000$</div></div>
+      <div><div class="lbl">5 уровень</div><div class="v money">+25.000$</div></div>
+      <div class="tot"><div class="lbl">Итого</div><div class="v">50.000$</div></div>
+    </div>
+    <div class="grid xp">
+      <div><svg class="ic"><use href="#i-clock"/></svg><div><h3>Как растёт уровень</h3><p>Каждый час игры (не в AFK) приходит PayDay и даёт опыт. Для следующего уровня нужно набрать «текущий уровень × 4» опыта. До 5 уровня это 40 опыта.</p></div></div>
+      <div><svg class="ic"><use href="#i-star"/></svg><div><h3>Зачем тебе VIP</h3><p>VIP даёт ×2 опыта за PayDay, так что до 5 уровня ты дойдёшь примерно вдвое быстрее. Ещё он удваивает пособие и ускоряет лечение.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVERS -->
+<section>
+  <div class="wrap">
+    <h2 class="sh">Сервера</h2>
+    <p class="sp">Код работает на любом сервере. Выбирай любой или бери тот, что лаунчер советует новичкам.</p>
+    <div class="grid srv">
+      <div><span>🌆</span>Downtown</div><div><span>🌘</span>Eclipse</div><div><span>💎</span>Rockford</div><div><span>🌲</span>Redwood</div>
+      <div><span>🌹</span>Murrieta</div><div><span>⛰️</span>Chiliad</div><div><span>🪞</span>Mirror</div><div><span>🐍</span>Blaine</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <h2 class="sh">Вопросы</h2>
+    <div class="faq">
+      <details><summary>Это бесплатно?</summary><p>Да, сервера бесплатные. Нужна только лицензионная GTA V (Legacy) на ПК.</p></details>
+      <details><summary>Где регистрироваться?</summary><p>Только на официальном сайте проекта и в его лаунчере, туда ведёт кнопка «Начать играть». Эта страница не просит ни логин, ни пароль.</p></details>
+      <details><summary>Можно стрелять во всех, как в обычной GTA?</summary><p>Нет. Это RolePlay: ты отыгрываешь роль, и на сервере действуют правила. Прочитай «Основы RolePlay» и правила до начала игры: незнание не спасёт от наказания.</p></details>
+      <details><summary>Мне пишет «администратор» и просит пароль</summary><p>Это мошенник. Настоящая администрация переносит тебя в отдельный мир к персонажу с красной надписью «Администратор сервера». Она никогда не просит пароль и не предлагает скачать файлы.</p></details>
+      <details><summary>Игра не запускается</summary><p>Проверь, что игра и лаунчеры стоят в разных папках, а сама игра лицензионная, версии Legacy. Остальные решения есть в официальной вики проекта, в статье «Ошибки и проблемы запуска».</p></details>
+      <details><summary>Я уже играю. Код сработает?</summary><p>Бонус рассчитан на тех, кто пришёл по приглашению. Если у тебя уже есть аккаунт, просто поделись кодом SKYE с другом.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="final">
+  <div class="wrap">
+    <h2>Город ждёт.<br><span class="o">Код: SKYE</span></h2>
+    <a class="btn" href="https://gta5rp.com/ref/skye" data-play="final">Начать играть <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+  </div>
 </div>
-
-<section>
-  <div class="wrap">
-    <h2>Как забрать бонус <em>за 3 шага</em></h2>
-    <div class="steps">
-      <div class="step"><h3>Регистрируйся</h3><p>Жми «Начать играть» — откроется сайт GTA 5 RP. Создай аккаунт, это бесплатно.</p></div>
-      <div class="step"><h3>Заходи на сервер</h3><p>Скачай лаунчер проекта, выбери сервер и создай персонажа.</p></div>
-      <div class="step"><h3>Вводи <code>SKYE</code></h3><p>Укажи промокод по подсказкам на проекте — стартовые награды придут на аккаунт.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Кем ты станешь <em>сегодня?</em></h2>
-    <div class="roles">
-      <div class="role"><div class="ico">🚓</div><b>Полицейский</b><span>Погони, рейды, звания</span></div>
-      <div class="role"><div class="ico">🔫</div><b>Бандит</b><span>Своя банда и территория</span></div>
-      <div class="role"><div class="ico">💼</div><b>Бизнесмен</b><span>Купи бизнес — получай доход</span></div>
-      <div class="role"><div class="ico">🏎️</div><b>Гонщик</b><span>Тюнинг и уличные заезды</span></div>
-      <div class="role"><div class="ico">🚑</div><b>Медик</b><span>Спасай город и карьеру</span></div>
-      <div class="role"><div class="ico">🎤</div><b>Кто угодно</b><span>Это ролевая игра — правил жанра нет</span></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>С кодом <em>или без</em></h2>
-    <div class="compare">
-      <div class="col bad"><h3>Без промокода</h3><ul><li>Старт с пустыми карманами</li><li>Долгий гринд на первую машину</li><li>Никаких стартовых наград</li></ul></div>
-      <div class="col good"><h3>С кодом SKYE</h3><ul><li>Бонус новичка на старте</li><li>Быстрее к тачке, дому и бизнесу</li><li>Дополнительные награды на сервере</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Частые <em>вопросы</em></h2>
-    <details><summary>Это бесплатно?</summary><p>Да, сам проект GTA 5 RP бесплатный. Для игры нужна лицензионная GTA V на ПК (Steam, Epic Games или Rockstar Launcher).</p></details>
-    <details><summary>Где регистрироваться?</summary><p>Только на официальном сайте проекта — кнопка «Начать играть» ведёт туда. На этой странице мы не просим ни логин, ни пароль.</p></details>
-    <details><summary>Куда вводить промокод SKYE?</summary><p>Следуй подсказкам на проекте при регистрации или после входа на сервер. Код вводится один раз на новый аккаунт.</p></details>
-    <details><summary>Я уже играю. Код сработает?</summary><p>Бонус рассчитан на новых игроков. Если у тебя уже есть аккаунт — поделись кодом с другом.</p></details>
-  </div>
-</section>
-
-<section>
-  <div class="wrap final">
-    <h2>Сервер ждёт.<br><em>Бонус тоже.</em></h2>
-    <p class="lead" style="margin:0 auto">Промокод <b style="color:var(--gold)">SKYE</b> — скопируй и жми.</p>
-    <a class="cta" href="https://gta5rp.com/ref/skye" data-play="final">Начать играть
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-  </div>
-</section>
 
 <footer>
   <div class="wrap">
-    <p>Это партнёрская (реферальная) страница, а не официальный сайт GTA 5 RP. Регистрация и игра проходят на сайте проекта. Grand Theft Auto и GTA V — товарные знаки Take-Two Interactive / Rockstar Games. 16+</p>
+    <p>Неофициальная партнёрская (реферальная) страница-гайд. Это не сайт GTA5RP: регистрация и игра проходят на официальном сайте проекта. Гайд составлен по официальной вики проекта, условия там могут меняться. Grand Theft Auto и GTA V являются товарными знаками Take-Two Interactive / Rockstar Games. 16+</p>
   </div>
 </footer>
 
 <div class="sticky" id="sticky">
-  <button class="c" type="button" data-copy>SKYE</button>
-  <a class="cta" href="https://gta5rp.com/ref/skye" data-play="sticky">Начать играть</a>
+  <button type="button" data-copy>SKYE</button>
+  <a href="https://gta5rp.com/ref/skye" data-play="sticky">Начать играть <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
 </div>
 
 <script>
 (function(){
-  var ID = 114489946;
-  function goal(name, params){ try{ ym(ID,'reachGoal',name,params||{}); }catch(e){} }
-
-  // CTA clicks: send goal, then go
+  var ID = 114489946, toast = document.getElementById('toast'), tt;
+  function goal(name, params, cb){ try{ ym(ID,'reachGoal',name,params||{},cb); }catch(e){ if(cb) cb(); } }
+  function copy(silent){
+    try{ if (navigator.clipboard) navigator.clipboard.writeText('SKYE').catch(function(){}); }catch(e){}
+    if(!silent){ toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove('show'); }, 1800); }
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){ copy(); goal('promo_copy'); });
+  });
   document.querySelectorAll('[data-play]').forEach(function(a){
     a.addEventListener('click', function(ev){
+      copy(true);
       if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button === 1) { goal('play_click',{place:a.dataset.play}); return; }
       ev.preventDefault();
       var href = a.href, gone = false;
       function go(){ if(!gone){ gone = true; location.href = href; } }
-      try{ ym(ID,'reachGoal','play_click',{place:a.dataset.play}, go); }catch(e){}
+      goal('play_click',{place:a.dataset.play}, go);
       setTimeout(go, 400);
     });
   });
-
-  // copy promo code
-  document.querySelectorAll('[data-copy]').forEach(function(b){
-    b.addEventListener('click', function(){
-      var done = function(){
-        var t = b.textContent; b.classList.add('done'); b.textContent = 'Скопировано ✓';
-        setTimeout(function(){ b.classList.remove('done'); b.textContent = t; }, 1600);
-      };
-      if (navigator.clipboard) navigator.clipboard.writeText('SKYE').then(done, done); else done();
-      goal('promo_copy');
-    });
-  });
-
-  // sticky bar after hero
-  var s = document.getElementById('sticky'), hero = document.querySelector('.promo');
+  var s = document.getElementById('sticky'), hero = document.querySelector('.herogrid');
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function(e){ s.classList.toggle('show', !e[0].isIntersecting && e[0].boundingClientRect.top < 0); }).observe(hero);
   } else { s.classList.add('show'); }
