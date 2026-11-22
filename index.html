@@ -40,7 +40,10 @@ a{color:inherit;text-decoration:none}
 .ic{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
 kbd{display:inline-block;min-width:26px;padding:0 7px;border:1px solid #57575c;border-bottom-width:3px;border-radius:5px;
   background:#2a2a2d;color:#fff;font:600 13px/1.7 Inter,sans-serif;text-align:center;margin:0 1px;vertical-align:1px}
-.o{color:transparent;-webkit-text-stroke:1.4px var(--text)}
+/* outline via shadows: text-stroke shows the font's internal overlap lines */
+.o{--oc:var(--text);--of:var(--bg);color:var(--of);
+  text-shadow:-1.5px -1.5px 0 var(--oc),1.5px -1.5px 0 var(--oc),-1.5px 1.5px 0 var(--oc),1.5px 1.5px 0 var(--oc),
+              0 -1.5px 0 var(--oc),0 1.5px 0 var(--oc),-1.5px 0 0 var(--oc),1.5px 0 0 var(--oc)}
 .acc{color:var(--acc)}
 .money{color:var(--money)}
 
@@ -57,7 +60,15 @@ kbd{display:inline-block;min-width:26px;padding:0 7px;border:1px solid #57575c;b
 
 /* hero */
 .hero{position:relative;padding:56px 0 0;overflow:hidden}
-.hero .bgword{position:absolute;right:-40px;top:20px;font:900 clamp(120px,22vw,320px)/1 var(--display);color:transparent;-webkit-text-stroke:1px #2c2c30;z-index:0;pointer-events:none;letter-spacing:-4px}
+.hero .bgword{position:absolute;right:-40px;top:20px;font:900 clamp(120px,22vw,320px)/1 var(--display);color:#1f1f22;z-index:0;pointer-events:none;letter-spacing:-4px}
+.hero-intro{text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero-intro .eyebrow{justify-content:center}
+.hero-intro .lead{margin:0 auto}
+.cta-xl{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:40px;width:100%}
+.btn.xl{justify-content:center;width:min(100%,620px);padding:30px 40px;font-size:clamp(20px,2.6vw,30px);box-shadow:0 18px 50px -18px rgba(255,122,47,.8)}
+.btn.xl svg{width:30px;height:30px}
+.textlink{color:var(--muted);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.textlink:hover{color:var(--text);border-color:var(--text)}
 .hero .wrap{position:relative;z-index:1}
 .eyebrow{display:flex;gap:10px;align-items:center;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
 .eyebrow b{width:8px;height:8px;background:var(--acc)}
@@ -194,7 +205,7 @@ details p{color:var(--muted);padding:0 0 24px;max-width:780px}
 .final{margin-top:96px;background:var(--acc);color:#fff;position:relative;overflow:hidden}
 .final .wrap{padding-top:70px;padding-bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .final h2{font:900 clamp(34px,6.5vw,92px)/.95 var(--display);text-transform:uppercase;letter-spacing:-1px}
-.final h2 .o{-webkit-text-stroke-color:#fff}
+.final h2 .o{--oc:#fff;--of:var(--acc)}
 .final .btn{background:#1b1b1d}
 .final .btn:hover{background:#000}
 
@@ -250,12 +261,14 @@ footer p{max-width:900px}
 <header class="hero" id="top">
   <div class="bgword">SKYE</div>
   <div class="wrap">
-    <div class="eyebrow"><b></b>Гайд для тех, кто ни разу не играл в RP</div>
-    <h1><span>Зайди в</span><span class="o">GTA 5 RP</span><span class="acc">с бонусом</span></h1>
-    <p class="lead">Объясняем по шагам: что такое RP, что установить, что делать в первые 30 минут на сервере и как ввести промокод <b>SKYE</b>, чтобы получить <b>VIP на 10 дней</b> и <b>50.000$</b>.</p>
-    <div class="btnrow">
-      <a class="btn" href="https://gta5rp.com/ref/skye" data-play="hero">Начать играть <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
-      <a class="btn sec" href="#how">Читать гайд</a>
+    <div class="hero-intro">
+      <div class="eyebrow"><b></b>Гайд для тех, кто ни разу не играл в RP</div>
+      <h1><span>Зайди в</span><span class="o">GTA 5 RP</span><span class="acc">с бонусом</span></h1>
+      <p class="lead">Объясняем по шагам: что такое RP, что установить, что делать в первые 30 минут на сервере и как ввести промокод <b>SKYE</b>, чтобы получить <b>VIP на 10 дней</b> и <b>50.000$</b>.</p>
+      <div class="cta-xl">
+        <a class="btn xl" href="https://gta5rp.com/ref/skye" data-play="hero">Начать играть <svg viewBox="0 0 24 24"><use href="#i-arr"/></svg></a>
+        <a class="textlink" href="#how">Сначала прочитать гайд ↓</a>
+      </div>
     </div>
 
     <div class="grid herogrid">
@@ -328,7 +341,9 @@ footer p{max-width:900px}
         <ul><li>Выбери пустой слот с плюсом и прочитай «Ограничения по именам».</li><li>Укажи национальность, нормальные имя и фамилию (как у реального человека) и возраст от 18 до 70.</li><li>Настрой внешность и нажми «Начать играть». Внешность потом можно поменять.</li></ul></div>
         <div class="pay money">3.000$<small>стартовые наличные</small></div></div>
       <div class="row"><div class="n">02</div><div><h3>Подойди к Майклу</h3>
-        <p>Он стоит прямо на старте: подойди и нажми <kbd>E</kbd>. Затем открой телефон <kbd>↑</kbd> → «Сообщения» и нажми «Геолокация». На карте появится метка.</p></div><div class="pay"></div></div>
+        <p>Он стоит прямо на старте: подойди и нажми <kbd>E</kbd>. Затем открой телефон <kbd>↑</kbd> → «Сообщения» и нажми «Геолокация». На карте появится метка.</p>
+        <p class="warnline"><b>Сразу введи промокод, пока не забыл:</b> нажми <kbd>F10</kbd> → раздел «Приглашение» → в поле «Реферальный код» впиши <b class="acc">SKYE</b> и подтверди. Без кода не будет ни VIP, ни 50.000$. <a href="#code" style="text-decoration:underline">Как это выглядит</a></p></div>
+        <div class="pay acc">SKYE<small>VIP на 10 дней</small></div></div>
       <div class="row"><div class="n">03</div><div><h3>Возьми скутер</h3>
         <p>Рядом с Майклом стоит NPC «Местный арендодатель»: нажми <kbd>E</kbd>. Двигатель заводится клавишей <kbd>2</kbd>. Едь по метке.</p></div>
         <div class="pay neg">−100$<small>аренда</small></div></div>
